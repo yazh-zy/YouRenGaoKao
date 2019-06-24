@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/news_pager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+    <com.yangzhou.diplomaproject.view.viewpagerindictor.CirclePageIndicator
+        android:id="@+id/news_pager_indictor_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/news_pager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:padding="5dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/change_username_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_c9141d">
+
+        <TextView
+            android:id="@+id/change_username_back_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/title_close_btn_white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:text="@string/change_username"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/change_username_back_view"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/change_username_newname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_username"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/color_cccccc"
+        android:textColor="@color/color_333333"
+        android:layout_below="@+id/change_username_title"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/change_username_newname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/add_answer_line_selector"/>
+
+    <TextView
+        android:id="@+id/change_username_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_below="@+id/change_username_newname"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/color_c9141d"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+</RelativeLayout>

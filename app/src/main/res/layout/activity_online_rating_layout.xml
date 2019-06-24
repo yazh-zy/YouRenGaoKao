@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rating_online_titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rating_online_back_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/title_close_btn"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/rating_online_back_view"
+                    android:text="@string/rating_class"
+                    android:textColor="@color/color_333333"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rating_online_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating_online_titlebar"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/rating_online_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:id="@+id/rating_online_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/rating_online_pic"
+                    android:textColor="@color/color_333333"
+                    android:text="@string/test"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/rating_online_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/rating_online_title"
+                    android:textColor="@color/color_333333"
+                    android:text="@string/test"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating_online_info"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <RatingBar
+                    android:id="@+id/rating_star_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:numStars="5"
+                    android:rating="5"
+                    android:stepSize="0.5"/>
+
+                <EditText
+                    android:id="@+id/rating_comment_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rating_star_view"
+                    android:hint="@string/rating_comment_hint"
+                    android:textColorHint="@color/color_cccccc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/color_333333"
+                    />
+
+                <TextView
+                    android:id="@+id/rating_submit_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rating_comment_view"
+                    android:text="@string/submit"
+                    android:textSize="18dp"
+                    android:gravity="center_horizontal"
+                    android:background="@color/color_c9141d"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

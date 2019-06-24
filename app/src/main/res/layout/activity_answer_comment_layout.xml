@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/comment_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_c9141d">
+
+        <TextView
+            android:id="@+id/comment_back_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_close_btn_white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/comment_back_view"
+            android:text="@string/comment"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comment_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/comment_titlebar"
+        android:background="@color/white"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"
+            />
+    </RelativeLayout>
+
+    <!--listview列表-->
+    <ListView
+        android:id="@+id/comment_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_titlebar"
+        android:alwaysDrawnWithCache="false"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/comment_no_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_titlebar"
+        android:gravity="center_horizontal"
+        android:text="@string/no_comments"
+        android:textColor="@color/color_cccccc"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/line_normal"/>
+
+        <EditText
+            android:id="@+id/add_comment_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_comment"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/color_333333"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/add_comment_et"
+            android:background="@drawable/line_normal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/add_comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/write_answer_send"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

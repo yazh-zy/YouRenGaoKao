@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Diploma Project</string>
+
+    <string name="test">test</string>
+
+    <string name="news_image_view_text">新闻</string>
+    <string name="answer_image_view_text">问答</string>
+    <string name="online_image_view_text">线上课程</string>
+    <string name="mine_image_view_text">我的</string>
+    <string name="home_edittext_hint">搜索</string>
+    <string name="share_weixin">微信</string>
+    <string name="share_weixin_moment">朋友圈</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_sina">微博</string>
+    <string name="share_qzone">QQ空间</string>
+    <string name="download">下载</string>
+    <string name="download_success">下载成功</string>
+    <string name="download_failed">下载失败</string>
+    <string name="cancel">取消</string>
+    <string name="unlogin">未登录</string>
+    <string name="login_now">现在登录</string>
+    <string name="update_info">检查更新</string>
+    <string name="notification">消息通知</string>
+    <string name="share_app">分享推荐</string>
+    <string name="my_qrcode">二维码</string>
+    <string name="account">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="third_party_login">----第三方登录----</string>
+    <string name="register_account">邮箱</string>
+    <string name="register_conpassword">确认密码</string>
+    <string name="jpush_message_type">消息类型:</string>
+    <string name="jpush_message_content">消息内容:</string>
+    <string name="jpush_message_title">推送消息</string>
+    <string name="personal_info">的个人主页</string>
+    <string name="please_wait">加载中...</string>
+    <string name="add_question">提问</string>
+    <string name="next_step">下一步</string>
+    <string name="please_enter_question_title">请输入标题</string>
+    <string name="add_question_content">添加问题的补充说明...</string>
+    <string name="write_answer">写回答</string>
+    <string name="modify_answer">修改答案</string>
+    <string name="answer">回答</string>
+    <string name="like_"> 赞· </string>
+    <string name="like">赞</string>
+    <string name="comment">评论</string>
+    <string name="comment_"> 评论· </string>
+    <string name="add_comment">添加评论...</string>
+    <string name="write_answer_title">撰写答案</string>
+    <string name="write_answer_hint">写答案...</string>
+    <string name="change_username">修改用户名</string>
+    <string name="edit_answer_title">修改答案</string>
+    <string name="new_username">新用户名</string>
+    <string name="submit">提交</string>
+    <string name="change_password">修改密码</string>
+    <string name="new_password">新密码</string>
+    <string name="con_new_password">确认新密码</string>
+    <string name="user_setting">用户设置</string>
+    <string name="online_detail">直播详情</string>
+    <string name="online_not_start">直播还没开始...</string>
+    <string name="change_user_photo">修改头像</string>
+    <string name="choose_photo_local">相册</string>
+    <string name="choose_photo_camera">拍照</string>
+    <string name="no_answers">还没有回答...</string>
+    <string name="no_comments">还没有评论...</string>
+    <string name="reply">回复</string>
+    <string name="online_status">直播状态</string>
+    <string name="start_class">开始直播</string>
+    <string name="end_class">结束直播</string>
+    <string name="class_length">课程时长:</string>
+    <string name="class_url">直播网址:</string>
+    <string name="class_key">直播Key:</string>
+    <string name="rating_class">评价课程</string>
+    <string name="rating_comment_hint">写评论......</string>
+    <string name="class_comment">课程评论</string>
+    <string name="loginout">退出登录</string>
+    <string name="start_info">直播已经开始......如需结束请先结束OBS再点击结束直播按钮</string>
+
+
+    <string name="today_newest">------------&#062;&#062;今日最新&#060;&#060;------------</string>
+
+
+
+
+    <!-- QR_Code -->
+    <string name="button_ok">OK</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the
+        device.
+    </string>
+    <string name="msg_bulk_mode_scanned">Bulk mode: barcode scanned and saved</string>
+    <string name="scan_text">放入框中即可进行二维码扫描</string>
+    <string name="contents_contact">Contact info</string>
+    <string name="contents_email">Email address</string>
+    <string name="contents_location">Geographic coordinates</string>
+    <string name="contents_phone">Phone number</string>
+    <string name="contents_sms">SMS address</string>
+    <string name="contents_text">Plain text</string>
+    <string name="preferences_vibrate">preferences_vibrate</string>
+    <string name="preferences_play_beep">preferences_play_beep</string>
+    <string name="preferences_actions_title">When a barcode is found\u2026</string>
+    <string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+    <string name="preferences_decode_1D_title">1D barcodes</string>
+    <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+    <string name="preferences_decode_QR_title">QR Codes</string>
+    <string name="preferences_play_beep_title">Beep</string>
+    <string name="preferences_remember_duplicates_summary">Store multiple scans of the same barcode in History</string>
+    <string name="preferences_remember_duplicates_title">Remember duplicates</string>
+    <string name="preferences_scanning_title">When scanning for barcodes, decode\u2026</string>
+    <string name="preferences_supplemental_summary">Try to retrieve more information about the barcode contents</string>
+    <string name="preferences_supplemental_title">Retrieve more info</string>
+    <string name="preferences_vibrate_title">Vibrate</string>
+    <string name="preview_msg">&#160;preview pages available,click Download for more.</string>
+
+    <!--update模块-->
+    <string name="update_title">快下载更新体验一下吧</string>
+    <string name="update_new_version">您有新版本</string>
+    <string name="update_install">安装</string>
+    <string name="update_download_failed">下载失败</string>
+    <string name="update_download_failed_msg">下载失败，请检查网络连接或 SD卡存储空间</string>
+    <string name="update_download_start">开始下载</string>
+    <string name="update_download_processing">正在下载</string>
+    <string name="update_download_finish">下载完成</string>
+    <string name="update_download_tip">提示</string>
+    <string name="no_new_version_title">已是最新版</string>
+    <string name="no_new_version_msg">您当前已经是最新版本，无需更新。</string>
+    <string name="confirm">确定</string>
+    <string name="tian_qian">天前</string>
+    <string name="dian_zan">点赞</string>
+
+</resources>

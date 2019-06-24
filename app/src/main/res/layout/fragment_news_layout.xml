@@ -1,0 +1,58 @@
+<!--fragment_home_layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_cccccc">
+
+    <!--TitleBar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/color_c9141d">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/news_image_view_text"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/news_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"
+            />
+    </RelativeLayout>
+
+
+    <!--PullToRefresh-->
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--listview列表-->
+        <ListView
+            android:id="@+id/news_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alwaysDrawnWithCache="false"
+            android:visibility="gone"
+            />
+    </com.yalantis.phoenix.PullToRefreshView>
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<!--fragment_home_layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_cccccc"
+    android:orientation="vertical">
+
+    <!--TitleBar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_c9141d"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/answer_image_view_text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <!--TODO...-->
+        <TextView
+            android:id="@+id/add_questions_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/title_add_question" />
+
+        <TextView
+            android:id="@+id/qrcode_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/add_questions_view"
+            android:background="@drawable/title_qrcode_btn" />
+
+        <TextView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/add_questions_view"
+            android:layout_toRightOf="@id/qrcode_view"
+            android:background="@drawable/ic_launcher"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/home_edittext_hint"
+            android:textColor="@color/color_cdcdcd"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <!--loading页面(缺少loading动画 使用src引入drawable)
+    <ImageView
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scaleType="center"/>-->
+    <RelativeLayout
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ProgressBar
+            style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+    <!--PullToRefresh-->
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--listview列表-->
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alwaysDrawnWithCache="false"
+            android:divider="@color/color_cccccc"
+            android:dividerHeight="10dp"
+            android:visibility="gone" />
+    </com.yalantis.phoenix.PullToRefreshView>
+
+
+</LinearLayout>

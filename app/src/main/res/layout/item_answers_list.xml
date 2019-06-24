@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/answer_title_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/answer_author_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/nopic" />
+
+        <TextView
+            android:id="@+id/answer_author_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/answer_author_image"
+            android:text="@string/account"
+            android:textColor="@color/color_696969"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/answer_content_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer_title_info"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:text="1111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+        android:textColor="@color/color_333333" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer_content_info"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/answer_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_666666" />
+
+        <TextView
+            android:id="@+id/answer_like_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/answer_like"
+            android:text="@string/like_"
+            android:textColor="@color/color_666666" />
+
+        <TextView
+            android:id="@+id/answer_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/answer_like_view"
+            android:textColor="@color/color_666666" />
+
+        <TextView
+            android:id="@+id/answer_comment_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/answer_comment"
+            android:text="@string/comment_"
+            android:textColor="@color/color_666666" />
+
+        <TextView
+            android:id="@+id/answer_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/answer_comment_view"
+            android:textColor="@color/color_666666" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
